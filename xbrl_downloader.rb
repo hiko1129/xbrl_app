@@ -45,6 +45,6 @@ module DownloadXbrl
       end
     end
   else
-    puts 'Ticker symbol undefined'
+    puts 'Ticker symbol is undefined'
   end
 end
