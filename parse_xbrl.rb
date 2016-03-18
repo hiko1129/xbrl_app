@@ -3,6 +3,7 @@ require 'nokogiri'
 require 'pp'
 
 module ParseXbrl
+  #後で変更する
   # puts 'ファイルのパスを入力してください'
   # file_path = gets.chomp
   path = './6301/jpfr-asr-E01532-000-2009-03-31-01-2009-06-25.xbrl'
@@ -36,6 +37,8 @@ module ParseXbrl
   else
     status = 'CurrentYearNonConsolidatedInstant'
   end
+  #構造体を使ってデータをまとめる
+  #タグ名が異なるものへ対応する必要がある
   #資産、負債、資本
   #流動資産
   pp current_assets = proc.call('CurrentAssets', status)
