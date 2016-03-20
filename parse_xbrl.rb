@@ -37,7 +37,7 @@ module ParseXbrl
   else
     status = 'CurrentYearNonConsolidatedInstant'
   end
-  #構造体を使ってデータをまとめる
+  #構造体を使ってデータをまとめる or クラス化
   #タグ名が異なるものへ対応する必要がある
   #資産、負債、資本
   #流動資産
