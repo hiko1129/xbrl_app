@@ -83,8 +83,8 @@ XBRL側でnilが許される仕様になっているため注意が必要
   #固定資産
   print '固定資産:'
   pp noncurrent_assets = proc.call('NoncurrentAssets', status)
-  #自己資本
-  print '自己資本:'
+  #純資産
+  print '純資産:'
   pp net_assets = proc.call('NetAssets', status)
   #株主資本
   print '株主資本:'
@@ -92,9 +92,6 @@ XBRL側でnilが許される仕様になっているため注意が必要
   #棚卸資産
   print '棚卸資産:'
   pp inventories = proc.call('Inventories' ,status)
-  #商品及び製品
-  print '商品及び製品:'
-  pp merchandise_and_finished_goods = proc.call('MerchandiseAndFinishedGoods')
   #支払手形及び買掛金
   print '支払手形及び買掛金:'
   pp notes_and_accounts_payable_trade = proc.call('NotesAndAccountsPayableTrade', status)
